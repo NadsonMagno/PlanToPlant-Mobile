@@ -8,7 +8,7 @@ export default function SingUp() {
 
   function handleLogin(){
     
-    router.navigate('/index')
+    router.navigate('')
 
   }
 
@@ -24,6 +24,8 @@ export default function SingUp() {
         <TextInput placeholder="Email" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
           
         <TextInput placeholder="Senha" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
+
+        <TextInput placeholder="Confirmar Senha" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
       
         <TouchableOpacity style={styles.btnSubmit} onPress={handleLogin}>
             <Text>Criar conta</Text>
