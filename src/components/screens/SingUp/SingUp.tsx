@@ -8,7 +8,13 @@ export default function SingUp() {
 
   function handleLogin(){
     
-    router.navigate('')
+    router.navigate('/')
+
+  }
+
+  function handleRegister(){
+    
+    router.navigate('/(drawer)')
 
   }
 
@@ -16,7 +22,8 @@ export default function SingUp() {
 
   return (
     <KeyboardAvoidingView style={styles.fundo}>
-    
+        <Text style={styles.submitText}>Tela de Registro</Text>
+
     <View style={styles.container}>
        
     <TextInput placeholder="UserName" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
@@ -27,11 +34,11 @@ export default function SingUp() {
 
         <TextInput placeholder="Confirmar Senha" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
       
-        <TouchableOpacity style={styles.btnSubmit} onPress={handleLogin}>
+        <TouchableOpacity style={styles.btnSubmit} onPress={handleRegister}>
             <Text>Criar conta</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btnRegister}>
+        <TouchableOpacity style={styles.btnRegister} onPress={handleLogin}>
             <Text style={styles.registerText}>Login</Text>
 
         </TouchableOpacity>

@@ -13,12 +13,19 @@ export default function Login() {
 
   }
 
+  function handleRegister(){
+    
+    router.navigate('/(drawer)/configs')
+
+  }
 
 
   return (
     <KeyboardAvoidingView style={styles.fundo}>
     
+    <Text style={styles.submitText}>Tela de Login</Text>
     <View style={styles.container}>
+
        
     <TextInput placeholder="UserName" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
 
@@ -30,7 +37,8 @@ export default function Login() {
             <Text>Criar conta</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.btnRegister}>
+{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2168283523. */}
+        <TouchableOpacity style={styles.btnRegister} onPress={handleRegister}>
             <Text style={styles.registerText}>Login</Text>
 
         </TouchableOpacity>
