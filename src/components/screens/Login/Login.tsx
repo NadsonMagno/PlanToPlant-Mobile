@@ -8,14 +8,15 @@ export default function Login() {
 
   function handleSingUp(){
 
-    router.navigate('/singup')
-    
+    router.replace('/(tabs)/plantas');
+
 
   }
 
   function handleRegister(){
     
-    router.navigate('/(drawer)/configs')
+    router.navigate('/singup')
+
 
   }
 
@@ -34,12 +35,12 @@ export default function Login() {
         <TextInput placeholder="Senha" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
       
         <TouchableOpacity style={styles.btnSubmit} onPress={handleSingUp}>
-            <Text>Criar conta</Text>
+            <Text>Entrar</Text>
         </TouchableOpacity>
 
-{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2168283523. */}
+
         <TouchableOpacity style={styles.btnRegister} onPress={handleRegister}>
-            <Text style={styles.registerText}>Login</Text>
+            <Text style={styles.registerText}>Criar conta</Text>
 
         </TouchableOpacity>
     </View>

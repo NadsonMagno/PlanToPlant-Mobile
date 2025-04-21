@@ -14,7 +14,7 @@ export default function SingUp() {
 
   function handleRegister(){
     
-    router.navigate('/(drawer)')
+    router.navigate('/(tabs)/jardins')
 
   }
 
