@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+/*import { View, Text } from 'react-native';
 
 export default function Plantas() {
   return (
@@ -6,4 +6,6 @@ export default function Plantas() {
       <Text>Plantas</Text>
     </View>
   );
-}
+}*/
+
+export { default } from '@/components/screens/Plantas/Plantas';

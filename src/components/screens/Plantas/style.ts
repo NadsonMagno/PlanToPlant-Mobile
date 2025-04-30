@@ -7,18 +7,14 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.gray[700],
         flex: 1, 
         justifyContent: 'center',
-        alignItems: 'center',
     },
 
   
     container:{
-        flex: 1,
-        marginTop: 50,
-       
+        flex: 1,       
         alignItems: 'center',
-        justifyContent: 'center',
-        width: '90%',
-        paddingBottom: 50,
+        gap: 33,
+        padding: 33,
     },
    input:{
     backgroundColor: '#fff',
@@ -28,6 +24,12 @@ export const styles = StyleSheet.create({
     fontSize: 17,
     borderRadius: 7,
     padding: 10,
+   },
+   header: {
+    flexDirection: "row",
+   width: "100%",
+   justifyContent: "flex-start",
+   color: '#fff',
    },
 
     btnSubmit:{
